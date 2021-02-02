@@ -21,3 +21,33 @@ class ContainerWidget extends StatelessWidget {
     );
   }
 }
+
+class ContainerDecoration extends StatelessWidget {
+  const ContainerDecoration({Key key}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      body: Center(
+        child: Container(
+          decoration: BoxDecoration(
+            color: const Color(0xff7c94b6),
+            image: const DecorationImage(
+              image: NetworkImage(
+                  'https://i.pinimg.com/originals/91/86/6b/91866b918c9cca0747f483a46943e926.jpg'),
+              fit: BoxFit.cover,
+            ),
+            border: Border.all(
+              color: Colors.black,
+              width: 8,
+            ),
+            borderRadius: BorderRadius.circular(12),
+          ),
+          height: 280,
+          width: 200,
+          margin: EdgeInsets.all(20),
+        ),
+      ),
+    );
+  }
+}
