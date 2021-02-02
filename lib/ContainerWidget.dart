@@ -8,8 +8,10 @@ class ContainerWidget extends StatelessWidget {
       home: Scaffold(
         body: Center(
           child: Container(
-            color: Colors.green,
-            child: Text("Dasar Container"),
+            child: Center(child: Text("Dasar Container")),
+            color: Colors.blue,
+            width: 200,
+            height: 100,
           ),
         ),
       ),
