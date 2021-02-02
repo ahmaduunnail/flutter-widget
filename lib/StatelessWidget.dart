@@ -3,14 +3,10 @@ import 'package:flutter/material.dart';
 class Code1 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      title: "Flutter Demo",
-      theme: ThemeData(primarySwatch: Colors.blue),
-      home: Scaffold(
+    return Scaffold(
         body: Center(
           child: Text("Hello World"),
         ),
-      ),
     );
   }
 }

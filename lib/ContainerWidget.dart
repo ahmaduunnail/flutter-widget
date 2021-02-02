@@ -3,19 +3,16 @@ import 'package:flutter/material.dart';
 class ContainerWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      title: "Tes",
-      home: Scaffold(
-        body: Center(
-          child: Container(
-            alignment: Alignment.bottomCenter,
-            child: Text("Dasar Container"),
-            color: Colors.blue,
-            width: 200,
-            height: 100,
-            padding: EdgeInsets.all(10),
-            margin: EdgeInsets.all(10),
-          ),
+    return Scaffold(
+      body: Center(
+        child: Container(
+          alignment: Alignment.bottomCenter,
+          child: Text("Dasar Container"),
+          color: Colors.blue,
+          width: 200,
+          height: 100,
+          padding: EdgeInsets.all(10),
+          margin: EdgeInsets.all(10),
         ),
       ),
     );
@@ -46,6 +43,20 @@ class ContainerDecoration extends StatelessWidget {
           height: 280,
           width: 200,
           margin: EdgeInsets.all(20),
+        ),
+      ),
+    );
+  }
+}
+
+class PaddingWidget extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      body: Center(
+        child: Padding(
+          padding: EdgeInsets.all(30),
+          child: Text("Ini Padding"),
         ),
       ),
     );

@@ -6,9 +6,7 @@ class ScaffoldWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      title: "tes",
-      home: Scaffold(
+    return Scaffold(
         appBar: AppBar(
           title: Text("Sample Code"),
         ),
@@ -21,7 +19,6 @@ class ScaffoldWidget extends StatelessWidget {
           onPressed: () {  },
           child: const Icon(Icons.add),
         ),
-      ),
     );
   }
 }

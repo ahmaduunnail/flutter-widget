@@ -17,28 +17,32 @@ class App extends StatelessWidget {
         body: Center(
           widthFactor: 400,
           child: Column(children: [
-            Container(height: 130, child: Code1()),
+            Container(height: 110, child: Code1()),
             Container(
-              height: 130,
+              height: 110,
               child: Code2(
                 text: "Hello World",
               ),
             ),
             Container(
-              height: 130,
+              height: 110,
               child: NumberScreen(),
             ),
             Container(
-              height: 130,
+              height: 110,
               child: ScaffoldWidget(),
             ),
             Container(
-              height: 130,
+              height: 110,
               child: ContainerWidget(),
             ),
             Container(
-              height: 130,
+              height: 110,
               child: ContainerDecoration(),
+            ),
+            Container(
+              height: 110,
+              child: PaddingWidget(),
             )
           ]),
         ),
