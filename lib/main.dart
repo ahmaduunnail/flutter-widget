@@ -1,51 +1,42 @@
 import 'package:flutter/material.dart';
 import 'StatelessWidget.dart';
 import 'StatefulWidget.dart';
+import 'ScaffoldWidget.dart';
 
 void main() {
-  runApp(Stateful());
+  runApp(App());
 }
 
-class Stateless extends StatelessWidget {
+class App extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
         body: Center(
-          child: Column(
-            children: [
+          widthFactor: 400,
+          child: Column(children: [
             Container(
-              height: 100,
-               width: 100,
-                child: Code1()
-                ),
+              height: 200,
+              child: Code1()
+              ),
             Container(
-              height: 100,
-              width: 100,
+              height: 200,
               child: Code2(
                 text: "Hello World",
               ),
+            ),
+            Container(
+              height: 200,
+              child: NumberScreen(),
+            ),
+            Container(
+              height: 200,
+              child: ScaffoldWidget(),
             )
           ]),
         ),
       ),
-    );
-  }
-}
-
-class Stateful extends StatefulWidget {
-  Stateful({Key key}) : super(key: key);
-
-  @override
-  _StatefulState createState() => _StatefulState();
-}
-
-class _StatefulState extends State<Stateful> {
-  @override
-  Widget build(BuildContext context) {
-    return Container(
-       child: NumberScreen(),
     );
   }
 }
