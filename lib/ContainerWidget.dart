@@ -12,6 +12,8 @@ class ContainerWidget extends StatelessWidget {
             color: Colors.blue,
             width: 200,
             height: 100,
+            padding: EdgeInsets.all(10),
+            margin: EdgeInsets.all(10),
           ),
         ),
       ),
