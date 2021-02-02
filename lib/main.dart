@@ -67,6 +67,10 @@ class App extends StatelessWidget {
               height: 50,
               child: inputtextfieldwidget(),
             ),
+            Container(
+              height: 50,
+              child: SwitchInputWidget(),
+            ),
           ]),
         ),
       ),

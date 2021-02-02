@@ -28,3 +28,32 @@ class _inputtextfieldwidgetState extends State<inputtextfieldwidget> {
     );
   }
 }
+
+class SwitchInputWidget extends StatefulWidget {
+  
+  @override
+  _SwitchInputWidgetState createState() => _SwitchInputWidgetState();
+}
+
+class _SwitchInputWidgetState extends State<SwitchInputWidget> {
+  bool lightOn = false;
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: Text("First Screen"),
+      ),
+      body: Center(
+        child: Switch(
+          value: lightOn,
+          onChanged: (bool value) {
+            setState(() {
+              lightOn = value;
+            });
+          },
+        ),
+      ),
+    );
+  }
+}
