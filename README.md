@@ -1,6 +1,6 @@
 # FlutterWidget
 
-A new Flutter project.
+Widget Course by Ezy Industries
 
 ## Getting Started
 
