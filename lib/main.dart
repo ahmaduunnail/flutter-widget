@@ -108,6 +108,10 @@ class App extends StatelessWidget {
                 height: 50,
                 child: ScrollingDinamis(),
               ),
+              Container(
+                height: 450,
+                child: ScrollingGenerate(),
+              ),
             ],
           ),
         ),
