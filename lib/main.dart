@@ -83,6 +83,9 @@ class App extends StatelessWidget {
             Container(
               height: 50,
               child: ImageLocal(),
+            ),Container(
+              height: 50,
+              child: ImageServer(),
             )
           ]),
         ),
