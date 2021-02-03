@@ -119,3 +119,35 @@ class _RadiobtnState extends State<Radiobtn> {
     );
   }
 }
+
+class Checkboxbtn extends StatefulWidget {
+  Checkboxbtn({Key key}) : super(key: key);
+
+  @override
+  _CheckboxbtnState createState() => _CheckboxbtnState();
+}
+
+class _CheckboxbtnState extends State<Checkboxbtn> {
+  bool agree = false;
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: Text("First Screen"),
+      ),
+      body: ListTile(
+        leading: Checkbox(
+          value: agree,
+          onChanged: (value) {
+            setState(
+              () {
+                agree = value;
+              },
+            );
+          },
+        ),
+        title: Text("Agree Button"),
+      ),
+    );
+  }
+}

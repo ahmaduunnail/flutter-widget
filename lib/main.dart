@@ -72,8 +72,12 @@ class App extends StatelessWidget {
               child: SwitchInputWidget(),
             ),
             Container(
-              height: 250,
+              height: 50,
               child: Radiobtn(),
+            ),
+            Container(
+              height: 50,
+              child: Checkboxbtn(),
             )
           ]),
         ),
