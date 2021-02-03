@@ -6,6 +6,7 @@ import 'ContainerWidget.dart';
 import 'RowandColumn.dart';
 import 'Button.dart';
 import 'InputWidget.dart';
+import 'image.dart';
 
 void main() {
   runApp(App());
@@ -78,6 +79,10 @@ class App extends StatelessWidget {
             Container(
               height: 50,
               child: Checkboxbtn(),
+            ),
+            Container(
+              height: 50,
+              child: ImageLocal(),
             )
           ]),
         ),
