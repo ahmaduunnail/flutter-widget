@@ -71,6 +71,10 @@ class App extends StatelessWidget {
               height: 50,
               child: SwitchInputWidget(),
             ),
+            Container(
+              height: 250,
+              child: Radiobtn(),
+            )
           ]),
         ),
       ),
