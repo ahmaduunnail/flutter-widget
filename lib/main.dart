@@ -7,6 +7,7 @@ import 'RowandColumn.dart';
 import 'Button.dart';
 import 'InputWidget.dart';
 import 'image.dart';
+import 'ExpandedBox.dart';
 
 void main() {
   runApp(App());
@@ -86,6 +87,10 @@ class App extends StatelessWidget {
             ),Container(
               height: 50,
               child: ImageServer(),
+            ),
+            Container(
+              height: 250,
+              child: ExpandedWidget(),
             )
           ]),
         ),
