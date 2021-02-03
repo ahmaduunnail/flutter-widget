@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 class FirstScreen extends StatelessWidget {
+  String message = "Hello first screen";
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -17,7 +18,7 @@ class FirstScreen extends StatelessWidget {
               context,
               MaterialPageRoute(
                 builder: (context) {
-                  return SecondScreen();
+                  return SecondScreen(message);
                 },
               ),
             );
@@ -29,16 +30,26 @@ class FirstScreen extends StatelessWidget {
 }
 
 class SecondScreen extends StatelessWidget {
+  final String message;
+
+  SecondScreen(this.message);
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(
-          title: Text("Secon Screen"),
+          title: Text("Second Screen"),
         ),
         body: Center(
-          child: RaisedButton(child: Text("Kembali"), onPressed: () {
-            Navigator.pop(context);
-          },),
-        ));
+          child: Column(
+            mainAxisSize: MainAxisSize.min,
+            children: <Widget>[
+              Text(message),
+              RaisedButton(child: Text("Kembali"), onPressed: () {
+                Navigator.pop(context);
+              },),
+            ],
+          ),
+        ),);
   }
 }
