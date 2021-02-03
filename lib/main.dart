@@ -9,6 +9,7 @@ import 'InputWidget.dart';
 import 'image.dart';
 import 'ExpandedBox.dart';
 import 'navigation.dart';
+import 'LIstView.dart';
 
 void main() {
   runApp(App());
@@ -85,7 +86,8 @@ class App extends StatelessWidget {
             Container(
               height: 50,
               child: ImageLocal(),
-            ),Container(
+            ),
+            Container(
               height: 50,
               child: ImageServer(),
             ),
@@ -94,8 +96,12 @@ class App extends StatelessWidget {
               child: ExpandedWidget(),
             ),
             Container(
-              height: 250,
+              height: 50,
               child: FirstScreen(),
+            ),
+            Container(
+              height: 50,
+              child: ScrollingSreenStatis(),
             ),
           ]),
         ),
